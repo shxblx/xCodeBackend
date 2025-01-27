@@ -13,7 +13,11 @@ const app = express();
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://xcodefrontend.onrender.com"],
+    origin: [
+      "http://localhost:5173",
+      "https://xcodefrontend.onrender.com",
+      "https://x-code-frontend.vercel.app",
+    ],
     credentials: true,
     methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Access-Control-Allow-Credentials"],
